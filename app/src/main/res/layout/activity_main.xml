@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.quizapp.MainActivity">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:background="#AD1457"
+                android:src="@drawable/online_test_series" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/online_image_view"
+                    android:layout_width="370dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/online" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="110dp"
+                    android:src="@drawable/java"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Name"
+                        android:textColor="#000000"
+
+                        android:textSize="25sp"/>
+                    <EditText
+                        android:id="@+id/name_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="name"
+                        android:inputType="textCapWords"
+                        android:onClick="clear"
+                        android:textColor="#AD1457"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textColor="#000000"
+
+                            android:textSize="25sp"/>
+                        <EditText
+                            android:id="@+id/email_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="8dp"
+                            android:hint="email-id"
+                            android:inputType="textCapWords"
+                            android:onClick="clear"
+                            android:textColor="#AD1457"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="115dp"
+                        android:text="Start Quiz"
+                        android:textColor="#000000"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Who had invented java programming language."
+                    android:textColor="#000000"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bjarne Stroustop" />
+                    <RadioButton
+                        android:id="@+id/radio_1b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="James Gosling"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_1c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adolf Peter" />
+                    <RadioButton
+                        android:id="@+id/radio_1d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="None of the above"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. What was the previous name of java?"
+                    android:textColor="#000000"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cocoa"/>
+                    <RadioButton
+                        android:id="@+id/radio_2b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Oak" />
+
+                    <RadioButton
+                        android:id="@+id/radio_2c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tara"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_2d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Jscript"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. It is the java keyword that creates inheritance."
+                    android:textColor="#000000"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="enlarge"/>
+                    <RadioButton
+                        android:id="@+id/radio_3b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="inherits" />
+
+                    <RadioButton
+                        android:id="@+id/radio_3c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="extends"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_3d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="implements"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Java is structured programming language."
+                    android:textColor="#000000"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/radio_4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="True"/>
+                    <RadioButton
+                        android:id="@+id/radio_4b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="False"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. It is the rules of a programming language."
+                    android:textColor="#000000"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_5a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Format"/>
+                    <RadioButton
+                        android:id="@+id/radio_5b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logic" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Object"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_5d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Syntax"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Which of the following are legal identifiers in java?"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/checkbox_6a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="max_value" />
+                    <CheckBox
+                        android:id="@+id/checkbox_6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="_3variable" />
+                    <CheckBox
+                        android:id="@+id/checkbox_6c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$testVariable" />
+                    <CheckBox
+                        android:id="@+id/checkbox_6d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8example" />
+                    <CheckBox
+                        android:id="@+id/checkbox_6e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="variable test"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. Which of the following are keywords in java?"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/checkbox_7a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="object" />
+                    <CheckBox
+                        android:id="@+id/checkbox_7b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="break" />
+                    <CheckBox
+                        android:id="@+id/checkbox_7c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="static" />
+                    <CheckBox
+                        android:id="@+id/checkbox_7d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="method" />
+                    <CheckBox
+                        android:id="@+id/checkbox_7e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="return"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_view_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="8. The"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/blank_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_view_8"
+                        android:inputType="text"
+                        android:maxLength="5"
+                        android:textColor="#AD1457"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@id/blank_8"
+                        android:text=" method is where a program starts running."
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_view_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="9. A"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/blank_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_view_9"
+                        android:inputType="text"
+                        android:maxLength="7"
+                        android:textColor="#AD1457"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@id/blank_9"
+                        android:text=" error is a grammatical-error in using the programming language."
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_view_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="10. A"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/blank_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/text_view_10"
+                        android:inputType="text"
+                        android:maxLength="8"
+                        android:textColor="#AD1457"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@id/blank_10"
+                        android:text=" is a note written to a human reader of a program."
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:onClick="submitQuiz"
+                        android:text="submit quiz"/>
+                    <Button
+                        android:id="@+id/reset_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:onClick="resetQuiz"
+                        android:text="reset"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
