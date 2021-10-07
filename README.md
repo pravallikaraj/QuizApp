@@ -10,7 +10,6 @@ This is a simple android Quiz app where the user can enter his/her name and emai
   <tr>
     <td><img src="Screenshot_Quiz_app/quiz1.png" width=320 height=540></td>
     <td><img src="Screenshot_Quiz_app/quiz2.png" width=320 height=540></td>
-    <td><img src="Screenshot_Quiz_app/quiz3.png" width=320 height=540></td>
   </tr>
 <table>
   
