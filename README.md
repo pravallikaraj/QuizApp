@@ -16,13 +16,13 @@ This is a simple android Quiz app where the user can enter his/her name and emai
   
   <table>
   <tr>
+    <td><img src="Screenshot_Quiz_app/quiz3.png" width=320 height=540></td>
     <td><img src="Screenshot_Quiz_app/quiz4.png" width=320 height=540></td>
-    <td><img src="Screenshot_Quiz_app/quiz5.png" width=320 height=540></td>
   </tr>
 <table>
   
   <table>
   <tr>
-    <td><img src="Screenshot_Quiz_app/quiz3.png" width=320 height=540></td>
+    <td><img src="Screenshot_Quiz_app/quiz5.png" width=320 height=540></td>
   </tr>
 <table>
